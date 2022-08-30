@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = prompt('nhập số x')
+    function sumOfListPrime(){
+        let sum = 0;
+        let number = 2;
+        while (number<a){
+            let check = true;
+            for(let i=2 ; i< number;i++){
+                if( number % i === 0) {
+                    check = false;
+                    break;
+                }
+            }
+            if(check ) {
+                console.log(number)
+                sum += number
+                number++;
+            }else {
+                number++
+            }
+        }
+        alert(sum);
+    }
+    sumOfListPrime();
+
+</script>
